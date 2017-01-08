@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
+import Layout from '../../components/layout'
 class About extends Component {
   render() {
     return (
-      <div>
-        <Link href="/">Go to home</Link>
+      <Layout>
         <p>about us</p>
-      </div>
+      </Layout>
     )
   }
 }

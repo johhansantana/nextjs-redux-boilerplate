@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { initStore } from '../store'
-import Home from './Home';
+import Home from './home';
 
 export default class Counter extends React.Component {
   static getInitialProps ({ req }) {
