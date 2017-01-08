@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { initStore } from '../store'
 import Home from './home';
 
-export default class Counter extends React.Component {
+export default class App extends React.Component {
   static getInitialProps ({ req }) {
     const isServer = !!req;
     const store = initStore({}, isServer);

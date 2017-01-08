@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 class About extends Component {
   render() {
     return (
-      <Layout>
+      <Layout title="About us">
         <p>about us</p>
       </Layout>
     )
