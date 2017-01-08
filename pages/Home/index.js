@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Link from 'next/link';
 import * as demoActions from '../../actions/demoActions';
 class Home extends Component {
   static propTypes = {
@@ -15,6 +16,7 @@ class Home extends Component {
 
   componentDidMount() {
     const { setString } = this.props;
+    alert('setting default demo string to store');
     setString();
   }
 
@@ -28,7 +30,6 @@ class Home extends Component {
     const { demoString } = this.props;
     return (
       <div>
-        <p>{demoString}</p>
         <button
           onClick={() => this.changeDemoString('not the default string')}
         >
@@ -39,6 +40,8 @@ class Home extends Component {
         >
           change back to default
         </button>
+        <Link href="/about">go to about</Link>
+        <p>{demoString}</p>
       </div>
     )
   }
