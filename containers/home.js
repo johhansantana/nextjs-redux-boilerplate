@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Layout from '../components/layout'
 import * as demoActions from '../actions/demoActions';
+
 class Home extends Component {
   static propTypes = {
     demoString: PropTypes.string.isRequired,
