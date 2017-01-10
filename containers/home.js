@@ -1,11 +1,21 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Layout from '../../components/layout'
-import * as demoActions from '../../actions/demoActions';
+import Layout from '../components/layout'
+import * as demoActions from '../actions/demoActions';
+/**
+ * Home component to show basic redux usage with nextjs.
+ */
 class Home extends Component {
   static propTypes = {
+    /**
+     * demo string from redux actions.
+     */
     demoString: PropTypes.string.isRequired,
+    /**
+     * redux function from actions to set the string, accepts a string param,
+     * if none is passed, it will return the default string set in the action.
+     */
     setString: PropTypes.func.isRequired
   };
 
@@ -20,6 +30,10 @@ class Home extends Component {
     setString();
   }
 
+  /**
+   * Change the demo string to whatever you pass as a parameter.
+   * @param {string} theString - String to be passed to show in component.
+   */
   changeDemoString(theString: String) {
     const { setString } = this.props;
     console.log('changing demo string to: ', theString);
@@ -29,7 +43,7 @@ class Home extends Component {
   render() {
     const { demoString } = this.props;
     return (
-      <Layout>
+      <Layout title="Home page">
         <button
           onClick={() => this.changeDemoString('not the default string')}
         >

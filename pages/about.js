@@ -1,9 +1,9 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { initStore } from '../store'
-import Home from '../containers/home';
+import About from '../containers/about';
 /**
- * Component to show the home container.
+ * Component to show the about component.
  */
 export default class App extends React.Component {
   static getInitialProps ({ req }) {
@@ -20,7 +20,7 @@ export default class App extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <Home />
+        <About />
       </Provider>
     )
   }
