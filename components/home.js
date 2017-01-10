@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Layout from '../../components/layout'
-import * as demoActions from '../../actions/demoActions';
+import Layout from '../components/layout'
+import * as demoActions from '../actions/demoActions';
 class Home extends Component {
   static propTypes = {
     demoString: PropTypes.string.isRequired,
@@ -29,7 +29,7 @@ class Home extends Component {
   render() {
     const { demoString } = this.props;
     return (
-      <Layout>
+      <Layout title="Home page">
         <button
           onClick={() => this.changeDemoString('not the default string')}
         >
