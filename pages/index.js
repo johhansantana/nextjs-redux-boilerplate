@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { initStore } from '../store'
-import Home from '../components/home';
+import Home from '../containers/home';
 
 export default class App extends React.Component {
   static getInitialProps ({ req }) {
