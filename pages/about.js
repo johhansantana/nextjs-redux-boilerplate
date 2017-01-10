@@ -2,7 +2,9 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { initStore } from '../store'
 import About from '../containers/about';
-
+/**
+ * Component to show the about component.
+ */
 export default class App extends React.Component {
   static getInitialProps ({ req }) {
     const isServer = !!req;

@@ -4,10 +4,19 @@ import { bindActionCreators } from 'redux';
 import Layout from '../components/layout';
 import { getKittens } from '../api/kittens';
 import * as kittensActions from '../actions/kittensActions';
-
+/**
+ * About component to show a list of kittens fetched from an external api.
+ * Express api demo with nextJS coming soon!
+ */
 class About extends Component {
   static propTypes = {
+    /**
+     * an object response from api call, this is set from redux action.
+     */
     kittens: PropTypes.object.isRequired,
+    /**
+     * A redux function to set the kittens fetched from the api.
+     */
     setKittens: PropTypes.func.isRequired
   };
 
