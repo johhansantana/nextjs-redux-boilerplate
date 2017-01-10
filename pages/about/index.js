@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import Layout from '../../components/layout';
 import { getKittens } from '../../api/kittens';
+import * as demoActions from '../../actions/demoActions';
 class About extends Component {
   componentDidMount() {
     getKittens().then(function (response) {
@@ -18,4 +21,9 @@ class About extends Component {
     )
   }
 }
-export default About;
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(demoActions, dispatch);
+}
+
+export default connect(mapDispatchToProps)(About);
