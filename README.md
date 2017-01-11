@@ -29,3 +29,5 @@ now
 ### Live example:
 
 [https://nextjs-redux-boilerplate-toocsyxoax.now.sh]
+
+Live example uses my other repository [https://github.com/jsantana90/nextjs-express-boilerplate] as api which is deployed in `now` as well, go check it out.
