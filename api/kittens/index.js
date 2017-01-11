@@ -4,7 +4,7 @@ import axios from 'axios';
  * @return {AxiosPromise}
  */
 function getKittens () {
-  return axios.get('http://localhost:3001/');
+  return axios.get('https://nextjs-express-boilerplate-vxqbpvxtnf.now.sh/');
 }
 
 export {
