@@ -6,7 +6,7 @@ import { getKittens } from '../api/kittens';
 import * as kittensActions from '../actions/kittensActions';
 /**
  * About component to show a list of kittens fetched from an external api.
- * Express api demo with nextJS coming soon!
+ * Express api boilerplate with nextJS https://github.com/jsantana90/nextjs-express-boilerplate
  */
 class About extends Component {
   static propTypes = {
