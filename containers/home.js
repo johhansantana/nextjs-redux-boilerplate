@@ -26,6 +26,7 @@ class Home extends Component {
 
   componentDidMount() {
     const { setString } = this.props;
+    console.log('properties: ', this.props);
     alert('setting default demo string to store');
     setString();
   }

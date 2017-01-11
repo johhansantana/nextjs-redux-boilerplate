@@ -20,8 +20,9 @@ class About extends Component {
     setKittens: PropTypes.func.isRequired
   };
 
-  componentWillMount() {
+  componentDidMount() {
     const { setKittens } = this.props;
+    console.log('properties: ', this.props);
     getKittens().then(function (response) {
       console.log(response);
       setKittens(response);
