@@ -5,7 +5,7 @@
 
 This boilerplate was continued from [zeit official example](https://github.com/zeit/next.js/tree/master/examples/with-redux).
 
-To use this boilerplate, first clone or download this repo: [https://github.com/jsantana90/nextjs-redux-boilerplate.git].
+To use this boilerplate, first clone or download this repo: [https://github.com/johhansantana/nextjs-redux-boilerplate.git].
 
 ```bash
 git clone https://github.com/jsantana90/nextjs-redux-boilerplate.git *your-project-name*
@@ -28,6 +28,6 @@ now
 
 ### Live example:
 
-[https://nextjs-redux-boilerplate-toocsyxoax.now.sh]
+[https://nextjs-redux-boilerplate-cgbwmbbdpr.now.sh]
 
-Live example uses my other repository [https://github.com/jsantana90/nextjs-express-boilerplate] as api which is deployed in `now` as well, go check it out.
+Live example uses my other repository [https://github.com/johhansantana/nextjs-express-boilerplate] as api which is deployed in `now` as well, go check it out.

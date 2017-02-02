@@ -5,7 +5,7 @@ import axios from 'axios';
  * @return {AxiosPromise}
  */
 function getKittens () {
-  return axios.get('https://nextjs-express-boilerplate-vxqbpvxtnf.now.sh/');
+  return axios.get('https://nextjs-express-boilerplate-hqgdnllkeg.now.sh/api/kittens');
 }
 
 export {
