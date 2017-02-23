@@ -28,6 +28,6 @@ now
 
 ### Live example:
 
-[https://nextjs-redux-boilerplate-cgbwmbbdpr.now.sh]
+[https://nextjs-redux-boilerplate.now.sh]
 
 Live example uses my other repository [https://github.com/johhansantana/nextjs-express-boilerplate] as api which is deployed in `now` as well, go check it out.

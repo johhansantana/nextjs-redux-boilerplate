@@ -1,0 +1,33 @@
+exports[`With Snapshot Testing App shows "the default string" 1`] = `
+<div>
+  <header>
+    <nav>
+      <a
+        href="/"
+        onClick={[Function]}>
+         Home 
+      </a>
+       |
+      <a
+        href="/about"
+        onClick={[Function]}>
+         About 
+      </a>
+    </nav>
+  </header>
+  <button
+    onClick={[Function]}>
+    change demo string of redux store property to \'not the default string\'
+  </button>
+  <button
+    onClick={[Function]}>
+    change back to default
+  </button>
+  <p>
+    the default string
+  </p>
+  <footer>
+    This is the footer
+  </footer>
+</div>
+`;

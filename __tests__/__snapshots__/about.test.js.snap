@@ -1,0 +1,25 @@
+exports[`With Snapshot Testing About shows a loading 1`] = `
+<div>
+  <header>
+    <nav>
+      <a
+        href="/"
+        onClick={[Function]}>
+         Home 
+      </a>
+       |
+      <a
+        href="/about"
+        onClick={[Function]}>
+         About 
+      </a>
+    </nav>
+  </header>
+  <p>
+    Loading
+  </p>
+  <footer>
+    This is the footer
+  </footer>
+</div>
+`;
