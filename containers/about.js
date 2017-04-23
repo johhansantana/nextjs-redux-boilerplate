@@ -11,35 +11,24 @@ import * as kittensActions from "../actions/kittensActions";
 class About extends Component {
   static propTypes = {
     /**
-     * an object response from api call, this is set from redux action.
+     * an array/object response from api call, this is set from redux action.
      */
-    kittens: PropTypes.object.isRequired,
+    kittens: PropTypes.array.isRequired,
     /**
      * A redux function to set the kittens fetched from the api.
      */
     setKittens: PropTypes.func.isRequired
   };
-
-  componentDidMount() {
-    const { setKittens } = this.props;
-    getKittens()
-      .then(function(response) {
-        setKittens(response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  }
   render() {
     const { kittens } = this.props;
     return (
       <Layout title="About us">
-        {kittens.data
+        {kittens
           ? <div>
               <h2>About us</h2>
               <p>We are kittens: </p>
               <ul>
-                {kittens.data.map((cat, index) => {
+                {kittens.map((cat, index) => {
                   return (
                     <li key={index}>
                       {cat.name}
