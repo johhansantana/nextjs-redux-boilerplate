@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import Layout from '../components/layout'
-import * as demoActions from '../actions/demoActions';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import Layout from "../components/layout";
+import * as demoActions from "../actions/demoActions";
 /**
  * Home component to show basic redux usage with nextjs.
  */
@@ -26,18 +27,19 @@ class Home extends Component {
 
   componentDidMount() {
     const { setString } = this.props;
-    console.log('properties: ', this.props);
-    alert('setting default demo string to store');
+    console.log("properties: ", this.props);
+    alert("setting default demo string to store");
     setString();
   }
 
   /**
-   * Change the demo string to whatever you pass as a parameter.
+   * Change the demo string to whatever you pass as a parameter. It will set the default string
+   * if no parameter is passed.
    * @param {string} theString - String to be passed to show in component.
    */
   changeDemoString(theString: String) {
     const { setString } = this.props;
-    console.log('changing demo string to: ', theString);
+    console.log("changing demo string to: ", theString);
     setString(theString);
   }
 
@@ -45,26 +47,22 @@ class Home extends Component {
     const { demoString } = this.props;
     return (
       <Layout title="Home page">
-        <button
-          onClick={() => this.changeDemoString('not the default string')}
-        >
+        <button onClick={() => this.changeDemoString("not the default string")}>
           change demo string of redux store property to 'not the default string'
         </button>
-        <button
-          onClick={() => this.changeDemoString()}
-        >
+        <button onClick={() => this.changeDemoString()}>
           change back to default
         </button>
         <p>{demoString}</p>
       </Layout>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     demoString: state.demoString
-  }
+  };
 }
 
 function mapDispatchToProps(dispatch) {
