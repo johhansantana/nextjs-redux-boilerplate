@@ -1,9 +1,8 @@
-import React, { Component, PropTypes } from "react";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import Layout from "../components/layout";
-import { getKittens } from "../api/kittens";
-import * as kittensActions from "../actions/kittensActions";
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import Layout from '../components/layout';
+import * as kittensActions from '../actions/kittensActions';
 /**
  * About component to show a list of kittens fetched from an external api.
  * Express api boilerplate with nextJS https://github.com/jsantana90/nextjs-express-boilerplate

@@ -8,5 +8,5 @@ export function setString(theString: String = 'the default string') {
   return {
     type: SET_STRING,
     theString
-  }
+  };
 }

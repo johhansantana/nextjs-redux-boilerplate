@@ -1,8 +1,8 @@
-import React from "react";
-import { Provider } from "react-redux";
-import withRedux from "next-redux-wrapper";
-import { initStore } from "../store";
-import Home from "../containers/home";
+import React from 'react';
+import { Provider } from 'react-redux';
+import withRedux from 'next-redux-wrapper';
+import { initStore } from '../store';
+import Home from '../containers/home';
 /**
  * Component to show the home container.
  */

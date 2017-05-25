@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import Link from "next/link";
-import Router from "next/router";
-import Head from "next/head";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import Router from 'next/router';
+import Head from 'next/head';
 
 class Layout extends Component {
   static propTypes = {
@@ -11,7 +11,7 @@ class Layout extends Component {
   constructor() {
     super();
 
-    this.state = { aboutText: "About" };
+    this.state = { aboutText: 'About' };
     this.loading = this.loading.bind(this);
   }
 
@@ -20,9 +20,14 @@ class Layout extends Component {
    * the /about route data from the api it will transition to the /about page
    */
   loading() {
-    if (Router.pathname !== "/about") {
-      this.setState({ aboutText: "Fetching about data..." });
-      Router.push("/about");
+    if (Router.pathname !== '/about') {
+      this.setState({
+        aboutText: `
+          Fetching about data before rendering page, this might take a while if <i>now</i> server
+          was asleep...
+        `
+      });
+      Router.push('/about');
     }
   }
   render() {
@@ -45,8 +50,8 @@ class Layout extends Component {
                 Home
               </a>
             </Link>
-            {" | "}
-            <a href="#" onClick={this.loading}>
+            {' | '}
+            <a href="#" onClick={aboutText === 'About' && this.loading}>
               {aboutText}
             </a>
           </nav>
