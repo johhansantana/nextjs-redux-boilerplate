@@ -14,7 +14,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.store = initStore(props.initialState);
+    this.store = initStore(props.initialState, props.isServer);
   }
 
   render() {
