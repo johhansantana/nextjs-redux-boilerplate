@@ -1,9 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
-import { initStore } from '../store';
-import About from '../containers/about';
-import * as kittensActions from '../actions/kittensActions';
+import { initStore } from '!/store';
+import About from '!/containers/about';
+import * as kittensActions from '!/actions/kittensActions';
 /**
  * Component to show the about component.
  */

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Layout from '../components/layout';
-import * as demoActions from '../actions/demoActions';
+import Layout from '!/components/layout';
+import * as demoActions from '!/actions/demoActions';
 /**
  * Home component to show basic redux usage with nextjs.
  */
