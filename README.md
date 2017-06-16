@@ -18,8 +18,6 @@ npm install
 npm run dev
 ```
 
-Or use `yarn` to install dependencies (recommended).
-
 Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
 
 ```bash
